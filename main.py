@@ -4,8 +4,7 @@ from sys import exit
 import busmonitor as bm
 from custexcept import APIException, APIInitException
 
-cmd_str = "Commands: get (a)gencies, get (r)outes for agency, get route (i)nfo\
-, get arrivals for (s)top, get s(c)hedule"
+cmd_str = "Commands: get (a)gencies, get (r)outes for agency, get route (i)nfo"
 
 if __name__ == '__main__':
 
@@ -68,11 +67,6 @@ if __name__ == '__main__':
                 print()
                 for title, stopID in res:
                     print(f'\t{stopID} - {title}')
-
-            elif cmd == 'S':
-                pass
-            elif cmd == 'C':
-                pass
             else:
                 print("\n\tInvalid command entered.")
         except APIException as e:
