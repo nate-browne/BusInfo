@@ -53,7 +53,7 @@ if __name__ == '__main__':
             elif cmd == 'R':
 
                 prmpt = "Enter an agency name (not code): "
-                agency = muni if muni != "" else input(prmpt)
+                agency = agncy if agncy != "" else input(prmpt)
                 res = bus.get_routes_for(agency)
                 print()
                 for ent in res:
