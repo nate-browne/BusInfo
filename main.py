@@ -67,7 +67,7 @@ if __name__ == '__main__':
                 res = bus.get_route_info_for(agency, route)
                 print()
                 for title, stopID in res:
-                    print(f'{stopID} - {title}')
+                    print(f'\t{stopID} - {title}')
 
             elif cmd == 'S':
                 pass
